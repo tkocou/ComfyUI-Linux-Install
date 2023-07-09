@@ -15,7 +15,9 @@ Step 6) You will need to download 2 SDXL models and a SDXL VAE file.
 
 For the 2 SDXL models, follow the instructions in this Reddit posting: 
 https://www.reddit.com/r/StableDiffusion/comments/14sacvt/how_to_use_sdxl_locally_with_comfyui_how_to/
-And place them in the _ComfyUI/models/checkpoints_ directory.
+And place them in the _ComfyUI/models/checkpoints_ directory. If you are having trouble locating the files,
+Use the torrent file.
+
 Download the VAE file from here: https://huggingface.co/stabilityai/sdxl-vae/tree/main
 And place the file in the _ComfyUI/models/vae_ directory
 
