@@ -1,7 +1,7 @@
 # SDXL-linux-Install
 A simple script to make installing ComfyUI node based AI in Linux easier.
 
-Step 1) download the comfy-webui.sh file to your home directory.
+Step 1) download the **comfy-webui.sh** file to your home directory.
 
 Step 2) Open a terminal window and execute the next 2 commands
 
@@ -18,6 +18,8 @@ For the 2 SDXL models:
 https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 
 https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0
+
+And place the models into the _ComfyUI/models/checkpoints_ directory.
 
 Download the VAE file from here: 
 
