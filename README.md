@@ -1,7 +1,7 @@
 # SDXL-linux-Install
 A simple script to make installing ComfyUI node based AI in Linux easier.
 
-Step 1) download the webui.sh file to your home directory.
+Step 1) download the comfy-webui.sh file to your home directory.
 
 Step 2) Open a terminal window and execute the next 2 commands
 
