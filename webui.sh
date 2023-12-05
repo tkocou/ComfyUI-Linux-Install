@@ -77,6 +77,8 @@ if ping -q -c 1 google.com >/dev/null 2>&1; then
     python3.10 -m venv env
     if [ $? -ne 0 ]; then
       echo "Failed to create virtual environment. Please check your Python installation and try again."
+      echo "You might try renaming the old ComfyUI directory and restart this script for a fresh install."
+      echo "And then copy over the contents of the old ComfyUI directory into the fresh copy of ComfyUI."
       exit 1
     else
       echo "is created"
