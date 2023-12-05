@@ -33,3 +33,5 @@ ComfyUI Github Repository: https://github.com/comfyanonymous/ComfyUI
 
 By using the **comfy-webui.sh** script to start the ComfyUI AI, your copy of ComfyUI will be automatically
 updated to the latest version of ComfyUI.
+
+Older non-SDXL models can still be used. Copy those models into the _ComfyUI/models/checkpoints_ directory.
