@@ -88,8 +88,13 @@ fi
 
 # Activate the virtual environment
 echo -n "Activating virtual environment..."
+if source fooocus_env/bin/activate ; then
+  echo "is active"
+else
+  echo "is not active. Use the 'bash' shell instead of 'sh'."
+  exit 1
+fi
 source env/bin/activate
-echo "is active"
 
 # Install the required packages
 echo "Installing requirements..."
