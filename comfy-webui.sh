@@ -8,6 +8,11 @@ sleep 2
 PYTHON="python3.11"
 PYVENV="python3.11-venv"
 
+## This next variable, if you have multiple GPUs available
+## change the number from the default of '0' to the desired
+## GPU to use, like '1' as an example
+GPU_TO_RUN_ON="0"
+
 if ping -q -c 1 google.com >/dev/null 2>&1; then
     echo -e "\e[32mInternet Connection working fine\e[0m"
     # Install git
@@ -121,4 +126,4 @@ if [ -d "./tmp" ]; then
 fi
 
 # Launch the Python application
-python main.py
+python main.py --cuda-device $GPU_TO_RUN_ON
