@@ -13,6 +13,21 @@ PYVENV="python3.11-venv"
 ## GPU to use, like '1' as an example
 GPU_TO_RUN_ON="0"
 
+## Key ComfyUI CLI runtime arguments include:
+#
+## --use-sage-attention: Enables SAGE Attention optimization for faster processing (CUDA only). ￼
+## --fast: Activates fast processing features, though it may cause OOM issues on some systems. ￼
+## --reserve-vram=<MB>: Specifies the amount of VRAM to reserve (e.g., --reserve-vram=2 for 2GB). ￼
+## --lowvram / --novram: Enables low or ultra-low VRAM modes for systems with limited memory. ￼
+## --disable-pinned-memory: Disables pinned memory allocation, which can resolve recurring CUDA errors. ￼
+## --listen <IP> and --port <N>: Configures network access, allowing external connections (e.g., --listen 0.0.0.0). ￼
+## --cpu: Forces the application to run entirely on the CPU.
+## --enable-cors: Enables CORS headers for API access. 
+#
+## Some runtime options for ComfyUI; feel free to modify them!
+
+COMFYUI_OPTIONS="--normalvram --fast --use-sage-attention"
+
 if ping -q -c 1 google.com >/dev/null 2>&1; then
     echo -e "\e[32mInternet Connection working fine\e[0m"
     # Install git
@@ -126,4 +141,4 @@ if [ -d "./tmp" ]; then
 fi
 
 # Launch the Python application
-python main.py --cuda-device $GPU_TO_RUN_ON
+python main.py --cuda-device $GPU_TO_RUN_ON  $COMFYUI_OPTIONS
