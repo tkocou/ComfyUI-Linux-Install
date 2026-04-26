@@ -11,21 +11,7 @@ Step 2) Open a terminal window and execute the next 2 commands.
 
 Step 3) Lastly, after the script finishes, Press _Ctrl-C_ to quit.
 
-Step 4) You will need to download 2 SDXL models and a SDXL VAE file.
-
-For the 2 SDXL models:
-
-https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
-
-https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0
-
-And place the models into the _ComfyUI/models/checkpoints_ directory.
-
-Download the VAE file from here: 
-
-https://huggingface.co/stabilityai/sdxl-vae
-
-And place the file in the _ComfyUI/models/vae_ directory.
+Step 4) Connect to ComfyUI using the localhost:8188
 
 Step 5) Any time you wish to start the server, in your home directory, simply start **./comfy-webui.sh**.
 
