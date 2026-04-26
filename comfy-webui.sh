@@ -5,8 +5,10 @@ echo "It is used with the permission of ParisNeo (https://github.com/ParisNeo/lo
 
 sleep 2
 
-PYTHON="python3.11"
-PYVENV="python3.11-venv"
+## Feel free to revise thie python version as you need it to be (i.e. older versions)
+
+PYTHON="python3.13"
+PYVENV="python3.13-venv"
 
 ## This next variable, if you have multiple GPUs available
 ## change the number from the default of '0' to the desired
